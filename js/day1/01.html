@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $.ajax({
+        method: "POST",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query: "미움받을 용기"},
+        headers: {Authorization: "KakaoAK 4e57bae957fe602d6167d6aa905ecd6b"}
+        })
+
+        .done(function(msg) {
+            //alert("Data Saved: " + msg);
+            console.log(msg);
+            $( "p" ).append( "<strong>" + msg.documents[0].title + "</strong>");
+            $( "p" ).append( "<img src = "+ msg.documents[0].thumbnail + "/>");
+        });
+    </script>
+    </p>
+</body>
+</html>

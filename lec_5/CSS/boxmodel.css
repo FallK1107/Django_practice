@@ -1,0 +1,57 @@
+html{
+    font-size: 100%;
+    font-family: Arial, sans_serif;
+    color: #555;
+}
+
+body{
+    background-color: pink;
+}
+
+h1, h2{
+    text-decoration: underline;
+}
+
+h1{
+    font:italic bold 2em;
+    text-decoration: underline;
+    letter-spacing: 0.2em;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+#box-1{
+    background: teal;
+    color: rgb(247, 231, 225);
+    border-color: tomato;
+    border: solid 6px;
+    padding:1em;
+}
+
+#box-2{
+    text-align: center;
+    margin-top: 3rem;
+    border:dotted 3px rgb(226, 88, 226);
+    background-color: rosybrown;
+    border-radius: 15%;
+    color: seagreen;
+}
+
+#circle{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50px;
+    box-shadow: 6px 4px 5px #666;
+    display: inline;
+    justify-content: center;
+}
+
+#circle:hover{
+    background-color: teal;
+    width: 20px;
+}
+
+#text_2:link{

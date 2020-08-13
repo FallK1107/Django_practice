@@ -1,0 +1,22 @@
+html{
+    font-size: 100%;
+    font-family: monospace;
+}
+body{
+    background-color: yellow;
+    margin: 1em;
+}
+.container{
+    background-color: yellowgreen;
+    width: 500px;
+    height: 700px;
+    border-style: dashed;
+    border-color: white;
+}
+.container img{
+    float: right;
+    width: 200px;
+}
+.container p{
+    clear: right;
+}

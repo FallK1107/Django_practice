@@ -1,0 +1,55 @@
+https://code.jquery.com/
+
+https://api.jquery.com/jquery.ajax/
+
+코드목록창 ctrl + space
+
+-------------------------------------------------------
+
+1. jQuery core 3.5.1 uncompressed
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" 
+integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+crossorigin="anonymous"></script>
+    
+
+2. jQuery.atax settings
+
+<script>
+        $.ajax({
+        method: "POST",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
+        data: {query: "미움받을 용기"},
+        headers: {Authorization: "KakaoAK REST API 키"}
+        })
+
+        .done(function(msg) {
+            alert("Data Saved: " + msg);
+        });
+</script>
+
+3. $( "p" ).append( "" );
+append 안 따옴표에 값들 집어넣으면 됩니다
+
+4. 주석적용: 드래그 + ctrl + /
+
+---------------------------------------------
+
+5. 기본 콘솔 형식
+
+let globalName = 'global name';
+        console.log(globalName);
+
+var string;
+        string = "java script";
+        console.log(string);
+
+6. console은 f12를 통해서 볼수 있지만 document는 페이지에 바로 나온다.
+
+7. 조건문 콘솔
+
+const colors = ['red', 'blue', 'green'];
+
+        for(let i=0; i<colors.length; i++){
+            console.log(colors[i]);
+        }

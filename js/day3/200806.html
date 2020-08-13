@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>babo Document</title>
+    <style>
+
+        .babo img{
+            width: 200px;
+        }
+
+        .link-naver{
+            color: red;
+        }
+        .color{
+            background: pink;
+        }
+    </style>
+
+</head>
+<body>
+
+        <div class="babo">
+            <img src="images/마리오.jpg">
+            <a class="link-naver" href="https://naver.com/%22%3Enaver</a>
+        </div>
+
+        <button id = 'button1'>button</button>
+
+
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+
+        var link = document.querySelector('.babo a');
+
+        button1.onclick = function(){
+            link.className = 'color link-naver';
+        }
+
+
+    </script>
+
+
+</body>
+</html>

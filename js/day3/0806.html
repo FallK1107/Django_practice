@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>
+        ahahahah
+    </h1>
+
+    <script>
+        // function joy(){
+        //     console.log('1: zzz');
+        // }
+
+        // joy();
+
+        // function 더하기(a,b){
+        //     console.log('2: ' + a+b);
+        // }
+
+        // 더하기(50,20)
+
+        // function 안녕(이름){
+        //     console.log('3: 안녕 나는' + 이름 + '이야');
+        // }
+
+        // 안녕('가을');
+        // 안녕('여름');
+        // 안녕('봄');
+
+        // var a = 100;
+
+        // function sample2(){
+        //     if(a>0){
+        //         return;
+        //     }
+        //     console.log('4: zzz');
+        // }
+
+        // sample2();
+
+        // function 더하기2(a,b){
+        //     document.write(a+b);
+        //     return a+b;
+        // }
+        // console.log('4-1: ' + 더하기2(100,200));
+        // console.log('4-2: ' + h);
+
+        // var h = 더하기2(100,200);
+
+        // var c = 100;
+
+        // function sample1(){
+        //     var c = '5: sample1의 내부의 c';
+        //     var b = 200;
+        //     console.log(c);
+
+        //     function sample1_1(){
+        //         console.log('5: ' + b);
+
+        //         var d = 10000;
+        //     }
+
+        //     sample1_1();
+
+
+        //     console.log(d);
+        // }
+
+        // sample1();
+
+        // var daegu = {
+        //     a: 100,
+        //     b: 200,
+        //     c: 300
+        // };
+
+        // console.log('6-1: ' + daegu.c);
+
+        // var seoul = {
+        //     a: 100,
+        //     b: 200,
+        //     c: 300
+
+        //     city : {
+        //         deviceSize : null,
+        //         total : 0
+        //     }
+        // };
+
+        // console.log('6-3: ' + seoul.city.total);
+
+        var person = {};
+        person.age = 12;
+        person.name = '8: 친구';
+        console.log(person.name);
+
+        // person.introduce = function (){
+        //     console.log('8: 안녕 나는' + person.name + '야 나이는' + person.age + '친구야')
+        //     // console.log('8-2 (this): 안녕 나는' + this.name + '야 나이는' + this.age + '야')
+        // }
+        
+        var person2 = {
+            name: 'hana',
+            age: 20,
+            introduce : function (){
+            console.log('8: 안녕 나는 하나. 나이 20');
+            console.log('8: 안녕 나는' + this.name + '야 나이는' + this.age + '야')
+            // console.log('8-2 (this): 안녕 나는' + this.name + '야 나이는' + this.age + '야')
+            }
+        };
+
+        person2.introduce();
+
+        function Person(username, age){
+            this.username = username;
+            this.age = age;
+            this.introduce = function(){
+                console.log('9: 안녕 나는' + this.username + '야 나이는' + this.age + '살이야');
+            }
+        }
+
+        var p1 = new Person('친구', 20);
+        var p2 = new Person('가을', 10);
+
+        p1.introduce();
+        p2.introduce();
+
+    </script>
+</body>
+</html>
