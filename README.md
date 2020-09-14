@@ -1,0 +1,2 @@
+# StuCafeInfoFo
+# Django_practice
