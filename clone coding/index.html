@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="쇼핑몰.css">
+    <script src = "https://use.fontawesome.com/a660c63bdd.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript">
+        // $(document).ready(function(){
+        //     $('.jpg').mouseover(function(){
+        //         $(this).attr('src','옷설명.JPG');
+        //     }).mouseout(function(){
+        //         $(this).attr('src','옷01.JPG');
+        //     });
+        // });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            var jbOffset = $('.jbMenu').offset();
+            $( window ).scroll(function(){
+                if($(document).scrollTop() > jbOffset.top){
+                    $('.jbMenu').addClass('jbFixed');
+                }
+                else {
+                    $('.jbMenu').removeClass('jbFixed');
+                }
+            });
+        });
+    </script>
+
+    <title>아메카지 브랜드 MOAA(모아) 공식몰 입니다</title>
+
+    <script>
+        $(document).ready(function(){
+            $('.bxslider').bxSlider({
+                auto: true, // 자동으로 애니메이션 시작
+                speed: 500,  // 애니메이션 속도
+                pause: 10000,  // 애니메이션 유지 시간 (1000은 1초)
+                mode: 'horizontal', // 슬라이드 모드 ('fade', 'horizontal', 'vertical' 이 있음)
+                autoControls: true, // 시작 및 중지버튼 보여짐
+                pager: true, // 페이지 표시 보여짐
+                captions: true, // 이미지 위에 텍스트를 넣을 수 있음
+                slideWidth: 1600,
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+</head>
+
+<style>
+    html{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    header{
+        height: 135px;
+        margin: 0;
+        padding: 40px 0px 0px;
+    }
+
+    .jbMenu{
+        text-align: center;
+        background-color: white;
+        padding: 10px 0px;
+        width: 100%;
+        float: center;
+    }
+
+    .jbFixed {
+        position: fixed;
+        top: 0px;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="jbMenu">
+            <div class="main">
+                <img src="img/모아.png", height="30", width="160">
+            </div>
+            <ul>
+                <div class="sns">
+                    <li><a href = "https://www.facebook.com/amekajimoaa/" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href = "https://www.instagram.com/moaa_official/?hl=ko" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href = "https://blog.naver.com/amekajimoaa" target = "_blank"><i class="fa fa-bold" aria-hidden="true"></i></a></li>
+                    <li><a href = "https://m.post.naver.com/my/series/detail.nhn?seriesNo=395743&memberNo=39990458&prevVolumeNo=12109842" target = "_blank"><i class="fa fa-pencil-square" aria-hidden="true"></i></a></li>
+                </div>
+                
+                <li>ABOUT</li>
+                <li>SHOP</li>
+                <li>LOOKBOOK</li>
+                <li>COMMUNITY</li>
+                
+                <div class="another">
+                    <li><a href="장바구니.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+    
+                    <li><a href="로그인.html"><i class="fa fa-user-o" aria-hidden="true"></i></a></li>
+                    
+                    <li><i class="fa fa-search" aria-hidden="true"></i></li>
+                </div>
+            </ul>
+        </div>
+    </header>
+
+    <nav>
+        <img src="img/모아대문.PNG">
+    </nav>
+
+    <br>
+    <br>
+
+    <section>
+        <div class="text">
+            <p>CONVIVAL COMPANY PART.2</p>
+        </div>
+        <div class="text2">
+            <p>2020 SUMMER COLLECTION OPEN</p>
+        </div>
+    </section>
+
+    <br>
+    
+    <article>
+        <div class="container01">
+            <div class="jpg">
+                <img src="옷01.JPG"
+                onmouseover="this.src='옷설명.JPG'"
+                onmouseout="this.src='옷01.JPG'">
+            </div>
+            <div class="jpg">
+                <img src="옷01.JPG"
+                onmouseover="this.src='옷설명.JPG'"
+                onmouseout="this.src='옷01.JPG'">
+            </div>
+            <div class="jpg">
+                <img src="옷03.JPG"
+                onmouseover="this.src='옷설명.JPG'"
+                onmouseout="this.src='옷03.JPG'">
+            </div>
+            <div class="jpg">
+                <img src="옷04.JPG"
+                onmouseover="this.src='옷설명.JPG'"
+                onmouseout="this.src='옷04.JPG'">
+            </div>
+            <div class="jpg">
+                <img src="옷03.JPG"
+                onmouseover="this.src='옷설명.JPG'"
+                onmouseout="this.src='옷03.JPG'">
+            </div>
+            <div class="jpg">
+                <img src="옷04.JPG"
+                onmouseover="this.src='옷설명.JPG'"
+                onmouseout="this.src='옷04.JPG'">
+            </div>
+            <div class="jpg">
+                <img src="옷01.JPG"
+                onmouseover="this.src='옷설명.JPG'"
+                onmouseout="this.src='옷01.JPG'">
+            </div>
+            <div class="jpg">
+                <img src="옷04.JPG"
+                onmouseover="this.src='옷설명.JPG'"
+                onmouseout="this.src='옷04.JPG'">
+            </div>
+            <div class="jpg">
+                <img src="옷04.JPG"
+                onmouseover="this.src='옷설명.JPG'"
+                onmouseout="this.src='옷04.JPG'">
+            </div>
+            <div class="jpg">
+                <img src="옷01.JPG"
+                onmouseover="this.src='옷설명.JPG'"
+                onmouseout="this.src='옷01.JPG'">
+            </div>
+            <div class="jpg">
+                <img src="옷03.JPG"
+                onmouseover="this.src='옷설명.JPG'"
+                onmouseout="this.src='옷03.JPG'">
+            </div>
+            <div class="jpg">
+                <img src="옷04.JPG"
+                onmouseover="this.src='옷설명.JPG'"
+                onmouseout="this.src='옷04.JPG'">
+            </div>
+        </div>
+        <br>
+        <div class="button">
+            <a href="#">MORE</a>
+        </div>
+    </article>
+    <br>
+    <div class="text3">
+        <p>20 FALL COLLECTION LOOKBOOK</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="bxslider">
+        <li><a href="#"><img src="slide/슬라이드1.PNG" alt="" title=""></a></li>
+        <li><a href="#"><img src="slide/슬라이드2.PNG" alt="" title=""></a></li>
+        <li><a href="#"><img src="slide/슬라이드3.PNG" alt="" title=""></a></li>
+    </div>
+
+    <br>
+
+    <div class="text2">
+        <p>INSTAGRAM</p>
+    </div>
+    <br>
+    <div class="button02">
+        <a href="https://www.instagram.com/moaa_official/?hl=ko">@moaa_official</a>
+    </div>
+
+    <footer>
+        <div class="container02">
+            <div class="sns02">
+                <li><a href = "https://www.facebook.com/amekajimoaa/" target = "_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href = "https://www.instagram.com/moaa_official/?hl=ko" target = "_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href = "https://blog.naver.com/amekajimoaa" target = "_blank"><i class="fa fa-bold" aria-hidden="true"></i></a></li>
+                <li><a href = "https://m.post.naver.com/my/series/detail.nhn?seriesNo=395743&memberNo=39990458&prevVolumeNo=12109842" target = "_blank"><i class="fa fa-pencil-square" aria-hidden="true"></i></a></li>
+            </div>
+            <div class="last">
+                <li>이용약관</li>
+                <li>개인정보처리방침</li>
+                <li>사업자정보확인</li>
+                <br>
+            </div>
+            <div class="last02">
+                <li>상호: MOAA</li>
+                <li>대표: MOAA</li>
+                <li>개인정보관리책임자: MOAA</li>
+                <li>전화: 070-5173-0609</li>
+                <li>이메일: globalmoaa@gmail.com</li>
+            </div>
+            <div class="last03">
+                <li>주소: 반품주소) 서울 중구 신당동 을지로 45길 62 누죤빌딩 9층 107호</li>
+                <li>사업장주소) 서울시 마포구 상암동 1649 7층</li>
+                <li>사업자등록번호: 204-86-53909</li>
+                <li>통신판매: 2017-서울마포-1629</li>
+                <li>호스팅제공자: (주)식스샵</li>
+            </div>
+            <div class="safe">
+                <img src="안전결제.png", height="25", width="25">안전구매(에스크로) 서비스 가맹점
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

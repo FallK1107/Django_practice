@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        div: :hover{
+            background: blue;
+        }
+    </style> -->
+</head>
+<body>
+    <h1>view</h1>
+    <a href="{% url 'new' %}">글쓰기</a>
+
+    {% for post_ in post %}
+    <a href="{% url 'detail' post_.id %}" style="color:black; text-decoration: none;">
+    
+        <div style="border: 1px solid whitesmoke;">
+            <h3>{{post_.title}}</h3>
+            <p>{{post_.pub_date}}</p>
+            <p>{{post_.content}}</p>
+        </div>
+    </a>
+    <a href="{% url 'update' post_.id %}">수정하기</a>
+    <a href="{% url 'delete' post_.id %}">삭제하기</a>
+    {% endfor %}
+</body>
+</html>
